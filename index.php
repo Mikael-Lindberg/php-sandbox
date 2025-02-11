@@ -2,6 +2,11 @@
     $title = 'Site PHP';
     $heading = 'Welcome to the site';
     $body = 'Some description string';
+
+    $firstName = 'John';
+    $lastName = 'Doe';
+
+    $fullName = $firstName . ' ' .  $lastName;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +32,8 @@
                 <?= $heading ?>
             </h2>
             <p>
-                <?= $body ?>
+                <?= 'Hello, my name is ' . $fullName . '<br />' ?>
+                <?= "Hello, my name is $fullName" ?>
             </p>
         </div>
     </div>
